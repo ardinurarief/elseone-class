@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="id" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>XII PPLG 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RPE8VRFSH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0RPE8VRFSH');
+    </script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    colors: {
+                        "neo-yellow": "#FFD600",
+                        "neo-pink": "#FF006E",
+                        "neo-blue": "#3A86FF",
+                        "neo-green": "#00FF66",
+                        "neo-orange": "#FB5607",
+                        "neo-purple": "#8338EC",
+                        "neo-bg": "#F5F5F5",
+                        "neo-black": "#000000",
+                        "neo-cream": "#FFF9E6",
+                        "neo-mint": "#B8F3E5",
+                        "neo-lavender": "#E6D5F5",
+                        "neo-coral": "#FF6B6B",
+                        "neo-slate": "#2D3748",
+                        "neo-red": "#EF4444",
+                        "neo-teal": "#14B8A6",
+                    },
+                    boxShadow: {
+                        "neo": "4px 4px 0px 0px #000000",
+                        "neo-lg": "8px 8px 0px 0px #000000",
+                        "neo-xl": "12px 12px 0px 0px #000000",
+                    },
+                    borderWidth: {
+                        "3": "3px",
+                        "4": "4px",
+                        "6": "6px",
+                        "8": "8px",
+                    },
+                    animation: {
+                        typing: "typing 3.5s steps(40, end), blink-caret .75s step-end infinite",
+                        float: "float 6s ease-in-out infinite",
+                        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+                        "bounce-slow": "bounce 3s infinite",
+                        "spin-slow": "spin 8s linear infinite",
+                        wiggle: "wiggle 1s ease-in-out infinite",
+                        gradient: "gradient 15s ease infinite",
+                        "slide-up": "slideUp 0.5s ease-out",
+                        "slide-in": "slideIn 0.6s ease-out",
+                        "scale-in": "scaleIn 0.5s ease-out",
+                        "fade-in": "fadeIn 0.5s ease-out",
+                    },
+                    keyframes: {
+                        typing: {
+                            from: { width: "0" },
+                            to: { width: "100%" },
+                        },
+                        "blink-caret": {
+                            "from, to": { borderColor: "transparent" },
+                            "50%": { borderColor: "#000000" },
+                        },
+                        float: {
+                            "0%, 100%": { transform: "translate(0px, 0px)" },
+                            "50%": { transform: "translate(-4px, -4px)" },
+                        },
+                        wiggle: {
+                            "0%, 100%": { transform: "rotate(-3deg)" },
+                            "50%": { transform: "rotate(3deg)" },
+                        },
+                        gradient: {
+                            "0%, 100%": { backgroundPosition: "0% 50%" },
+                            "50%": { backgroundPosition: "100% 50%" },
+                        },
+                        slideUp: {
+                            from: { transform: "translateY(100px)", opacity: "0" },
+                            to: { transform: "translateY(0)", opacity: "1" },
+                        },
+                        slideIn: {
+                            from: { transform: "translateX(-100px)", opacity: "0" },
+                            to: { transform: "translateX(0)", opacity: "1" },
+                        },
+                        scaleIn: {
+                            from: { transform: "scale(0.8)", opacity: "0" },
+                            to: { transform: "scale(1)", opacity: "1" },
+                        },
+                        fadeIn: {
+                            from: { opacity: "0" },
+                            to: { opacity: "1" },
+                        },
+                        "neo-pop": {
+                            "0%": { transform: "scale(0.8) rotate(-2deg)", opacity: "0" },
+                            "70%": { transform: "scale(1.05) rotate(1deg)", opacity: "1" },
+                            "100%": { transform: "scale(1) rotate(0deg)", opacity: "1" },
+                        }
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/css">
+        html,
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .neo-card {
+            background: #FFFFFF;
+            border: 3px solid #000000;
+            box-shadow: 6px 6px 0px 0px #000000;
+            transition: all 0.2s ease;
+        }
+
+        .neo-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0px 0px #000000;
+        }
+
+        .neo-btn {
+            background: #FFD600;
+            border: 2px solid #000000;
+            box-shadow: 4px 4px 0px 0px #000000;
+            transition: all 0.2s ease;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .neo-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #000000;
+        }
+
+        .neo-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px #000000;
+        }
+
+        .gradient-bg {
+            background: #FFD600;
+            border-bottom: 4px solid #000000;
+        }
+
+        .skill-card {
+            background: #FFFFFF;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 0px 0px #000000;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .skill-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 8px 8px 0px 0px #000000;
+        }
+
+        /* Added marquee animation styles for infinite horizontal scroll */
+        .skills-marquee-container {
+            overflow: hidden;
+            width: 100%;
+            padding: 2rem 0;
+        }
+
+        .skills-marquee {
+            display: flex;
+            gap: 1.5rem;
+            animation: marquee 40s linear infinite;
+            width: fit-content;
+        }
+
+        .skills-marquee-item {
+            flex-shrink: 0;
+            min-width: 120px;
+            background: #FFFFFF;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 0px 0px #000000;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .skills-marquee-item:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 8px 8px 0px 0px #000000;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* End marquee animation */
+
+        .project-card {
+            background: #FFFFFF;
+            border: 4px solid #000000;
+            box-shadow: 8px 8px 0px 0px #000000;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px 0px #000000;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .modal-content {
+            background: #FFFFFF;
+            border: 4px solid #000000;
+            box-shadow: 12px 12px 0px 0px #000000;
+            padding: 2rem;
+            max-width: 90vw;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: scaleIn 0.3s ease-out;
+        }
+
+        .floating-label {
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+
+        .form-input:focus+.floating-label,
+        .form-input:not(:placeholder-shown)+.floating-label {
+            transform: translateY(-25px) scale(0.8);
+            color: #000000;
+            font-weight: 700;
+        }
+
+        /* Project carousel styling */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            flex: 0 0 33.333%;
+            padding: 0 1rem;
+            min-width: 0;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item {
+                flex: 0 0 100%;
+            }
+        }
+
+        .carousel-button-static {
+            width: 50px;
+            height: 50px;
+            background: #FFD600;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 0px 0px #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .carousel-button-static:hover {
+            background: #FF006E;
+            color: #FFFFFF;
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #000000;
+        }
+
+        .carousel-button-static:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px #000000;
+        }
+
+
+        .testimonial-card {
+            background: #FFFFFF;
+            border: 3px solid #000000;
+            box-shadow: 6px 6px 0px 0px #000000;
+            transition: all 0.2s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonial-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 10px 10px 0px 0px #000000;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInCard {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .testimonial-card {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .testimonial-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .testimonial-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .testimonial-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .testimonial-stat {
+            animation: slideInCard 0.6s ease-out forwards;
+        }
+
+        .testimonial-stat:nth-child(1) {
+            animation-delay: 0.4s;
+        }
+
+        .testimonial-stat:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .testimonial-stat:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .testimonial-stat:nth-child(4) {
+            animation-delay: 0.7s;
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            .skill-card:active,
+            .project-card:active,
+            .testimonial-card:active {
+                transform: scale(0.98);
+            }
+        }
+
+        .skill-filter-btn.active {
+            transform: translate(-2px, -2px);
+            background: #FFD600;
+            box-shadow: 4px 4px 0px 0px #000000;
+            border: 2px solid #000000;
+        }
+
+        /* GitHub contribution graph styles */
+        .github-contribution-graph {
+            display: grid;
+            grid-template-columns: repeat(52, minmax(12px, 1fr));
+            gap: 3px;
+            width: 100%;
+        }
+
+        .contribution-day {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .contribution-day:hover {
+            transform: scale(1.3);
+        }
+
+        .contribution-day.level-0 {
+            background-color: rgba(48, 54, 61, 0.4);
+        }
+
+        .contribution-day.level-1 {
+            background-color: #0e4429;
+        }
+
+        .contribution-day.level-2 {
+            background-color: #006d32;
+        }
+
+        .contribution-day.level-3 {
+            background-color: #26a641;
+        }
+
+        .contribution-day.level-4 {
+            background-color: #39d353;
+        }
+
+        .dragging {
+            animation: none !important;
+            transition: none !important;
+            z-index: 40 !important;
+        }
+
+        @keyframes slideDownRope {
+            0% {
+                transform: translateY(-200px);
+                opacity: 0;
+            }
+
+            60% {
+                transform: translateY(20px);
+                opacity: 1;
+            }
+
+            80% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slide-down-rope {
+            animation: slideDownRope 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            will-change: transform, opacity;
+        }
+
+        .reveal-up {
+            transform: translateY(60px);
+        }
+
+        .reveal-down {
+            transform: translateY(-60px);
+        }
+
+        .reveal-left {
+            transform: translateX(-60px);
+        }
+
+        .reveal-right {
+            transform: translateX(60px);
+        }
+
+        .reveal-scale {
+            transform: scale(0.8);
+        }
+
+        .reveal.active {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+
+        .delay-100 {
+            transition-delay: 100ms;
+        }
+
+        .delay-200 {
+            transition-delay: 200ms;
+        }
+
+        .delay-300 {
+            transition-delay: 300ms;
+        }
+
+        .delay-400 {
+            transition-delay: 400ms;
+        }
+
+        .delay-500 {
+            transition-delay: 500ms;
+        }
+
+        /* End GitHub styles */
+    </style>
+</head>
+
+<body class="bg-neo-bg text-black font-sans selection:bg-neo-pink selection:text-white overflow-x-hidden">
+    <!-- Enhanced Header with Language Toggle -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b-4 border-black">
+        <div class="container mx-auto px-4 sm:px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl sm:text-2xl font-black text-black uppercase tracking-tighter">
+                    XII <span class="bg-neo-yellow px-1 border-2 border-black">PPLG 1</span>
+                </a>
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="#home"
+                        class="nav-link active py-2 text-sm lg:text-base font-bold text-black hover:bg-neo-yellow px-2 transition-all"
+                        data-translate="nav-home">Beranda</a>
+                    <a href="#about"
+                        class="nav-link py-2 text-sm lg:text-base font-bold text-black hover:bg-neo-pink hover:text-white px-2 transition-all"
+                        data-translate="nav-about">Tentang</a>
+                    <a href="#projects"
+                        class="nav-link py-2 text-sm lg:text-base font-bold text-black hover:bg-neo-blue hover:text-white px-2 transition-all"
+                        data-translate="nav-projects">Proyek</a>
+                    <a href="#skills"
+                        class="nav-link py-2 text-sm lg:text-base font-bold text-black hover:bg-neo-green px-2 transition-all"
+                        data-translate="nav-skills">Keahlian</a>
+                    <a href="#members"
+                        class="nav-link py-2 text-sm lg:text-base font-bold text-black hover:bg-neo-orange hover:text-white px-2 transition-all"
+                        data-translate="nav-members">Anggota</a>
+                    <a href="#testimonial"
+                        class="nav-link py-2 text-sm lg:text-base font-bold text-black hover:bg-neo-orange hover:text-white px-2 transition-all"
+                        data-translate="nav-testimonial">Testimoni</a>
+                    <a href="#activities"
+                        class="nav-link py-2 text-sm lg:text-base font-bold text-black hover:bg-neo-purple hover:text-white px-2 transition-all"
+                        data-translate="nav-activities">Kegiatan</a>
+                    <a href="#timeline"
+                        class="nav-link py-2 text-sm lg:text-base font-bold text-black hover:bg-neo-yellow px-2 transition-all"
+                        data-translate="nav-timeline">Perjalanan</a>
+                    <a href="#contact"
+                        class="nav-link py-2 text-sm lg:text-base font-bold text-black hover:bg-neo-pink hover:text-white px-2 transition-all"
+                        data-translate="nav-contact">Kontak</a>
+                </nav>
+                <!-- Language Toggle Button -->
+                <div class="flex items-center gap-4">
+                    <button id="lang-toggle" class="neo-btn px-4 py-2 bg-neo-purple text-white">
+                        <span class="lang-text">EN</span>
+                    </button>
+                    <button id="mobile-menu-button" class="md:hidden text-black focus:outline-none">
+                        <i class="fas fa-bars text-xl sm:text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="md:hidden hidden mt-4 pb-4 space-y-2 bg-white border-t-2 border-black p-4 shadow-neo">
+                <a href="#home" class="block py-2 font-bold text-black hover:bg-neo-yellow px-2"
+                    data-translate="nav-home">Home</a>
+                <a href="#about" class="block py-2 font-bold text-black hover:bg-neo-pink px-2 hover:text-white"
+                    data-translate="nav-about">Tentang</a>
+                <a href="#projects" class="block py-2 font-bold text-black hover:bg-neo-blue px-2 hover:text-white"
+                    data-translate="nav-projects">Proyek</a>
+                <a href="#skills" class="block py-2 font-bold text-black hover:bg-neo-green px-2"
+                    data-translate="nav-skills">Keahlian</a>
+                <a href="#activities" class="block py-2 font-bold text-black hover:bg-neo-purple px-2 hover:text-white"
+                    data-translate="nav-activities">Kegiatan</a>
+                <a href="#testimonial" class="block py-2 font-bold text-black hover:bg-neo-orange px-2 hover:text-white"
+                    data-translate="nav-testimonial">Testimonial</a>
+                <a href="#timeline" class="block py-2 font-bold text-black hover:bg-neo-yellow px-2"
+                    data-translate="nav-timeline">Timeline</a>
+                <a href="#contact" class="block py-2 font-bold text-black hover:bg-neo-pink px-2 hover:text-white"
+                    data-translate="nav-contact">Kontak</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 border-b-8 border-black bg-neo-green">
+        <div
+            class="absolute inset-0 opacity-10 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px]">
+        </div>
+        <div class="absolute inset-0">
+            <div
+                class="draggable-shape absolute top-16 left-5 md:top-1/3 md:left-1/4 w-16 h-16 md:w-32 md:h-32 bg-neo-pink border-4 border-black shadow-neo-lg animate-float hover:rotate-12 transition-transform duration-300 cursor-move z-0">
+            </div>
+            <div class="draggable-shape absolute bottom-10 right-5 md:bottom-1/3 md:right-1/4 w-20 h-20 md:w-40 md:h-40 bg-neo-blue border-4 border-black shadow-neo-lg animate-float hover:-rotate-12 transition-transform duration-300 cursor-move z-0"
+                style="animation-delay: 1s"></div>
+            <div class="draggable-shape absolute top-20 right-5 md:top-1/2 md:left-1/2 w-14 h-14 md:w-24 md:h-24 bg-neo-green border-4 border-black shadow-neo-lg animate-float hover:rotate-45 transition-transform duration-300 cursor-move z-0"
+                style="animation-delay: 2s"></div>
+        </div>
+        <div class="container mx-auto px-4 sm:px-6 z-30 text-center">
+            <h1 class="text-4xl sm:text-6xl md:text-8xl font-black mb-6 text-black uppercase tracking-tighter">
+                <div class="relative inline-block animate-slide-down-rope">
+                    <span
+                        class="bg-white px-6 py-2 border-4 border-black shadow-neo-xl inline-block transform -rotate-2 hover:rotate-2 transition-transform duration-300 cursor-default relative"
+                        id="dev-name">
+                        <!-- Tali Gantungan (Ditingkatkan agar tidak putus) -->
+                        <div
+                            class="absolute top-0 left-8 w-1 h-[1000px] bg-black -translate-y-full -z-10 hidden md:block">
+                        </div>
+                        <div
+                            class="absolute top-0 right-8 w-1 h-[1000px] bg-black -translate-y-full -z-10 hidden md:block">
+                        </div>
+                        <!-- Baut Gantungan -->
+                        <div class="absolute top-1 left-7 w-3 h-3 bg-black rounded-full hidden md:block"></div>
+                        <div class="absolute top-1 right-7 w-3 h-3 bg-black rounded-full hidden md:block"></div>
+                        XII PPLG 1
+                    </span>
+                </div>
+            </h1>
+            <h2
+                class="text-2xl sm:text-3xl md:text-4xl font-black mb-8 text-black animate-slide-up bg-neo-pink text-white inline-block px-4 py-2 border-4 border-black shadow-neo transform rotate-1 hover:-rotate-1 transition-transform duration-300 cursor-default">
+                <span class="typing-text" id="dev-title">Pengembang Web</span>
+            </h2>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8 animate-slide-up">
+                <a href="#projects" class="neo-btn px-8 py-4 text-lg uppercase tracking-bold bg-neo-blue text-white"
+                    data-translate="hero-view-work">Lihat Karya Kami</a>
+                <div class="flex gap-4">
+                    <a href="#" target="_blank"
+                        class="neo-btn w-14 h-14 bg-neo-pink flex items-center justify-center text-white border-1 border-white"
+                        title="Instagram">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="#" target="_blank"
+                        class="neo-btn w-14 h-14 bg-neo-black flex items-center justify-center text-white border-1 border-white"
+                        title="Twitter">
+                        <i class="fab fa-x text-2xl"></i>
+                    </a>
+                    <a href="#" target="_blank"
+                        class="neo-btn w-14 h-14 bg-neo-purple flex items-center justify-center text-white border-1 border-white"
+                        title="TikTok">
+                        <i class="fab fa-tiktok text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
+            <a href="#about" class="text-black hover:text-neo-pink transition-colors">
+                <i class="fas fa-chevron-down text-4xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Enhanced About Section -->
+    <section id="about" class="py-10 sm:py-16 md:py-20 scroll-mt-16">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2
+                class="text-3xl sm:text-4xl md:text-5xl font-black mb-10 text-center uppercase tracking-tighter reveal reveal-up">
+                <span
+                    class="bg-neo-pink text-white px-6 py-2 border-4 border-black shadow-neo-lg inline-block transform rotate-2 hover:-rotate-2 transition-transform duration-300 cursor-default"
+                    data-translate="about-title">Tentang Kami</span>
+            </h2>
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16">
+                <div class="lg:w-2/5 flex justify-center reveal reveal-left">
+                    <div class="relative">
+                        <div id="about-img-container"
+                            class="w-64 h-64 sm:w-72 sm:h-72 overflow-hidden border-8 border-black shadow-neo-xl transform -rotate-3 cursor-pointer transition-transform duration-300 ease-in-out">
+                            <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Foto Profil"
+                                class="w-full h-full object-cover object-center">
+                        </div>
+                        <div
+                            class="absolute -bottom-4 -right-4 w-20 h-20 bg-neo-yellow border-4 border-black shadow-neo -z-10 animate-spin-slow">
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/5 reveal reveal-right delay-200">
+                    <h3 class="text-2xl sm:text-3xl font-black mb-4 uppercase tracking-tight">
+                        <span data-translate="about-intro">Kami adalah</span>
+                        <span class="text-neo-blue" data-translate="class-name">Kelas XII PPLG 1</span>,
+                        <span data-translate="about-subtitle" class="bg-neo-green px-2">Rekayasa Perangkat Lunak</span>
+                    </h3>
+
+                    <p class="text-black font-medium mb-4 leading-relaxed text-sm border-l-4 border-neo-pink pl-4"
+                        data-translate="about-desc2">
+                        Kelas XII PPLG 1 adalah kumpulan siswa berbakat di SMKN 1 Banjarmasin yang fokus mempelajari
+                        pengembangan web, mobile, dan jaringan komputer. Kami berkomitmen menciptakan solusi digital
+                        kreatif, berkolaborasi dalam proyek nyata, dan mempersiapkan diri menjadi profesional teknologi
+                        yang kompeten dan beretika.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 reveal reveal-up delay-400">
+                        <div class="flex items-center p-3 bg-white border-3 border-black shadow-neo">
+                            <i class="fas fa-map-marker-alt text-neo-pink mr-3 text-lg"></i>
+                            <span class="text-xs sm:text-sm font-bold">Bandar Lampung, Indonesia</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-white border-3 border-black shadow-neo">
+                            <i class="fas fa-envelope text-neo-blue mr-3 text-lg"></i>
+                            <span class="text-xs sm:text-sm font-bold break-all">xiipplg1@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Projects Section with Carousel -->
+    <section id="projects" class="py-20 sm:py-32 border-y-4 border-black bg-neo-blue">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6 text-center md:text-left reveal reveal-up">
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter">
+                    <span
+                        class="bg-neo-yellow text-black px-8 py-3 border-4 border-black shadow-neo-lg inline-block transform -rotate-1 hover:rotate-1 transition-transform duration-300 cursor-default"
+                        data-translate="projects-title">Proyek Saya</span>
+                </h2>
+                <div class="flex gap-4">
+                    <button class="carousel-button-static prev" id="prevBtn" onclick="moveCarousel(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-button-static next" id="nextBtn" onclick="moveCarousel(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Project Carousel -->
+            <div class="carousel-container relative reveal reveal-scale delay-200">
+                <div class="carousel-inner" id="projectCarousel">
+
+
+                    <!-- 1. Gilmar Idea -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Gilmar Idea"
+                                    class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="project9-title">
+                                    GILMAR IDEA</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project9-desc">Web berita
+                                    digital yang menyajikan informasi terkini bagi mahasiswa STIE Pancasetia.</p> -->
+                                <!-- <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fas fa-bolt text-[#000000] text-2xl" title="Next.js"></i>
+                                    <i class="fas fa-database text-[#339933] text-2xl" title="Supabase"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="#" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. DonghuaWatch -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="DonghuaWatch"
+                                    class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="badge-portfolio">DONGHUAWATCH</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project-donghuawatch-desc">
+                                    Situs
+                                    streaming Donghua dengan subtitle Indonesia yang cepat dan responsif.
+                                </p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fab fa-react text-[#61DAFB] text-2xl" title="React.js"></i>
+                                    <i class="fas fa-server text-neo-blue text-2xl" title="API"></i>
+                                    <i class="fab fa-css3-alt text-[#1572B6] text-2xl" title="CSS"></i>
+                                    <i class="fas fa-bolt text-[#00A3E0] text-2xl" title="Supabase"></i>
+                                    <i class="fas fa-mobile-alt text-neo-pink text-2xl" title="Capacitor"></i>
+                                    <i class="fas fa-route text-black text-2xl" title="React Router"></i>
+                                    <i class="fas fa-database text-[#4479A1] text-2xl" title="PostgreSQL"></i>
+                                    <i class="fas fa-chart-line text-neo-purple text-2xl" title="Vercel Analytics"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="https://donghuawatch.vercel.app/" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Siperu -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Siperu"
+                                    class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="project12-title">SIPERU</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project12-desc">Sistem
+                                    Informasi Peminjaman Ruangan untuk mengelola reservasi fasilitas kampus secara
+                                    otomatis.</p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fab fa-laravel text-[#FF2D20] text-2xl" title="Laravel"></i>
+                                    <i class="fas fa-wind text-[#06B6D4] text-2xl" title="Tailwind CSS"></i>
+                                    <i class="fas fa-database text-[#4479A1] text-2xl" title="MySQL"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="https://siperu.stiepancasetia.ac.id/" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. DonghuaWatch Komik -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png"
+                                    alt="DonghuaWatch Komik" class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="project13-title">DONGHUAWATCH KOMIK</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project13-desc">Platform baca
+                                    komik online dengan koleksi lengkap dan antarmuka yang ramah pengguna.</p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fab fa-react text-[#61DAFB] text-2xl" title="React.js"></i>
+                                    <i class="fab fa-css3-alt text-[#1572B6] text-2xl" title="CSS"></i>
+                                    <i class="fas fa-bolt text-[#00A3E0] text-2xl" title="Supabase"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="https://www.donghuawatch.cloud/komik" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. DonghuaWatch API -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png"
+                                    alt="DonghuaWatch API" class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight">DONGHUAWATCH API
+                                </h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project-api-desc">RESTful API
+                                    untuk
+                                    mengambil data streaming Donghua dengan fitur pencarian dan caching yang efisien.
+                                </p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fab fa-node-js text-[#339933] text-2xl" title="Node.js"></i>
+                                    <i class="fas fa-server text-neo-blue text-2xl" title="Express"></i>
+                                    <i class="fab fa-css3-alt text-[#1572B6] text-2xl" title="CSS"></i>
+                                    <i class="fas fa-spider text-[#FF6600] text-2xl" title="Scraping (Cheerio)"></i>
+                                    <i class="fas fa-exchange-alt text-neo-purple text-2xl" title="Axios"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="https://donghuawatchapi.vercel.app/" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. SIP -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="SIP"
+                                    class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="project10-title">SIP STIE PANCASETIA</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project10-desc">Sistem
+                                    Informasi Terpadu STIE Pancasetia untuk manajemen data akademik yang efisien.</p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fab fa-html5 text-[#E34F26] text-2xl" title="HTML5"></i>
+                                    <i class="fas fa-wind text-[#06B6D4] text-2xl" title="Tailwind CSS"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="https://sip.stiepancasetia.ac.id/" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. LPPM -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="LPPM"
+                                    class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="project11-title">LPPM STIE PANCASETIA</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project11-desc">Portal resmi
+                                    Lembaga Penelitian dan Pengabdian kepada Masyarakat STIE Pancasetia.</p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fab fa-wordpress text-[#21759B] text-2xl" title="WordPress"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="https://lppm.stiepancasetia.ac.id/" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Sistem Informasi Kurikulum OBE -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Kurikulum OBE"
+                                    class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="project2-title">
+                                    Sistem Informasi
+                                    Kurikulum OBE</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project2-desc">Sistem Desain
+                                    Kurikulum OBE yang dikembangkan untuk Poliban mendukung pengembangan kurikulum
+                                    sesuai prinsip OBE.</p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fab fa-laravel text-[#FF2D20] text-2xl" title="Laravel"></i>
+                                    <i class="fas fa-wind text-[#06B6D4] text-2xl" title="Tailwind CSS"></i>
+                                    <i class="fas fa-database text-[#4479A1] text-2xl" title="MySQL"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="#" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Chat Bot -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="AI ChatBot"
+                                    class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight">AI ChatBot</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project1-desc">Chatbot cerdas
+                                    bertenaga AI
+                                    yang dirancang untuk berinteraksi secara alami dengan pengguna menggunakan Gemini
+                                    API.</p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fas fa-bolt text-[#000000] text-2xl" title="Next.js"></i>
+                                    <i class="fas fa-brain text-neo-purple text-2xl" title="Gemini API"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="https://fikri-bot.vercel.app/" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. SIM-A -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="SIMA"
+                                    class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="project5-title">
+                                    SIM-A BPKPAD Kota
+                                    Banjarmasin</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project5-desc">Sistem
+                                    manajemen arsip
+                                    elektronik untuk BPKPAD mengoptimalkan penyimpanan dokumen, pengambilan, dan
+                                    keamanan.</p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fab fa-laravel text-[#FF2D20] text-2xl" title="Laravel"></i>
+                                    <i class="fas fa-wind text-[#06B6D4] text-2xl" title="Tailwind CSS"></i>
+                                    <i class="fas fa-database text-[#4479A1] text-2xl" title="MySQL"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Ular Tangga -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png"
+                                    alt="Snakes Ladders" class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="project4-title">
+                                    Permainan Ular Tangga
+                                </h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project4-desc">Game papan
+                                    klasik
+                                    berbasis web dengan fitur interaktif, memungkinkan dua pemain untuk bermain dengan
+                                    animasi mulus.</p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fab fa-html5 text-[#E34F26] text-2xl" title="HTML5"></i>
+                                    <i class="fab fa-js text-[#F7DF1E] text-2xl" title="JavaScript"></i>
+                                    <i class="fab fa-css3-alt text-[#1572B6] text-2xl" title="CSS3"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="#" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. AI Image Upscaler -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png"
+                                    alt="AI Image Upscaler" class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="project8-title">
+                                    AI Image Upscaler</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project8-desc">Aplikasi web
+                                    dengan AI
+                                    untuk upscale gambar hingga 4x menggunakan neural network Real-ESRGAN dengan hasil
+                                    profesional.</p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fas fa-bolt text-[#000000] text-2xl" title="Next.js"></i>
+                                    <i class="fas fa-brain text-neo-purple text-2xl" title="AI/ML"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="#" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-code2">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. LAN Skala Besar -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full flex flex-col">
+                            <div class="relative aspect-video overflow-hidden bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Cisco LAN"
+                                    class="w-full h-full object-cover object-center">
+                            </div>
+                            <div class="p-4 bg-white flex-grow">
+                                <!-- <h3 class="text-lg font-black mb-2 text-black uppercase tracking-tight"
+                                    data-translate="project3-title">
+                                    Desain LAN Berskala
+                                    Besar Cisco</h3>
+                                <p class="text-black font-bold mb-4 text-xs text-justify"
+                                    data-translate="project3-desc">Desain jaringan
+                                    menggunakan Cisco Packet Tracer untuk optimasi lingkungan korporat dengan VLAN dan
+                                    protokol routing.
+                                </p>
+                                <div class="flex flex-wrap gap-4 mb-6">
+                                    <i class="fas fa-network-wired text-[#1BA0D7] text-2xl" title="Cisco"></i>
+                                    <i class="fas fa-project-diagram text-neo-blue text-2xl" title="VLAN"></i>
+                                </div> -->
+                                <div class="flex gap-4 mt-auto">
+                                    <a href="javascript:void(0)" onclick="showPrivateAlert()"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-yellow text-center text-xs"
+                                        data-translate="btn-source">Source
+                                        Code</a>
+                                    <a href="#" target="_blank"
+                                        class="neo-btn flex-1 py-1.5 bg-neo-green text-center text-xs"
+                                        data-translate="btn-file">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Skills Section -->
+    <section id="skills" class="py-20 sm:py-32 bg-neo-bg">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2
+                class="text-3xl sm:text-4xl md:text-6xl font-black mb-16 text-center uppercase tracking-tighter reveal reveal-up">
+                <span
+                    class="bg-neo-green text-black px-8 py-3 border-4 border-black shadow-neo-lg inline-block transform rotate-1 hover:-rotate-1 transition-transform duration-300 cursor-default"
+                    data-translate="nav-skills">Keahlian</span>
+            </h2>
+
+            <!-- Removed filter buttons and grid layout, replaced with marquee -->
+            <div class="skills-marquee-container">
+                <div class="skills-marquee">
+                    <!-- Frontend Skills -->
+                    <div class="skills-marquee-item group hover:bg-[#E34F26] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-html5"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">HTML5</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#1572B6] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-css3-alt"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">CSS3</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#F7DF1E] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-black transition-colors duration-300"><i
+                                class="fab fa-js"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-black">JavaScript</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#06B6D4] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-wind"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Tailwind</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#7952B3] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-bootstrap"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Bootstrap</div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skills-marquee-item group hover:bg-[#777BB4] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-php"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">PHP</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#FF2D20] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-laravel"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Laravel</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#4479A1] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-database"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">MySQL</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#E37400] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-chart-bar"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Analytics</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#21759B] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-wordpress"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">WordPress</div>
+                    </div>
+
+                    <!-- Network Skills -->
+                    <div class="skills-marquee-item group hover:bg-[#1BA0D7] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-network-wired"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Cisco</div>
+                    </div>
+
+                    <!-- Design Skills -->
+                    <div class="skills-marquee-item group hover:bg-[#F24E1E] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-figma"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Figma</div>
+                    </div>
+
+                    <!-- Tools Skills -->
+                    <div class="skills-marquee-item group hover:bg-[#6e5494] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-github"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">GitHub</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-gray-600 transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-rocket"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Vercel</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#FF6C37] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-envelope"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Postman</div>
+                    </div>
+
+                    <!-- Duplicate skills untuk continuous loop tanpa jeda -->
+                    <div class="skills-marquee-item group hover:bg-[#E34F26] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-html5"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">HTML5</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#1572B6] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-css3-alt"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">CSS3</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#F7DF1E] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-black transition-colors duration-300"><i
+                                class="fab fa-js"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-black">JavaScript</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#06B6D4] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-wind"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Tailwind</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#7952B3] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-bootstrap"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Bootstrap</div>
+                    </div>
+
+                    <div class="skills-marquee-item group hover:bg-[#777BB4] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-php"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">PHP</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#FF2D20] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-laravel"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Laravel</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#4479A1] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-database"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">MySQL</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#E37400] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-chart-bar"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Analytics</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#21759B] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-wordpress"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">WordPress</div>
+                    </div>
+
+                    <div class="skills-marquee-item group hover:bg-[#1BA0D7] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-network-wired"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Cisco</div>
+                    </div>
+
+                    <div class="skills-marquee-item group hover:bg-[#F24E1E] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-figma"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Figma</div>
+                    </div>
+
+                    <div class="skills-marquee-item group hover:bg-[#6e5494] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fab fa-github"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">GitHub</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-gray-600 transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-rocket"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Vercel</div>
+                    </div>
+                    <div class="skills-marquee-item group hover:bg-[#FF6C37] transition-all duration-300">
+                        <div class="text-4xl mb-3 text-black group-hover:text-white transition-colors duration-300"><i
+                                class="fas fa-envelope"></i></div>
+                        <div class="font-black text-sm uppercase group-hover:text-white">Postman</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members" class="py-20 sm:py-32 bg-neo-mint border-y-4 border-black">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2
+                class="text-3xl sm:text-4xl md:text-6xl font-black mb-8 text-center uppercase tracking-tighter reveal reveal-up">
+                <span
+                    class="bg-white text-black px-8 py-3 border-4 border-black shadow-neo-lg inline-block transform -rotate-1 hover:rotate-1 transition-transform duration-300 cursor-default"
+                    data-translate="members-title">
+                    Anggota Kelas
+                </span>
+            </h2>
+
+            <!-- Tombol Navigasi -->
+            <div class="flex justify-center md:justify-end gap-4 mb-6">
+                <button class="carousel-button-static prev" onclick="moveMemberCarousel(-1)" aria-label="Prev"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="carousel-button-static next" onclick="moveMemberCarousel(1)" aria-label="Next"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <!-- Carousel Container -->
+            <div class="carousel-container relative reveal reveal-scale delay-200">
+                <div class="carousel-inner" id="memberCarousel">
+
+                    <!-- 👉 CONTOH KARTU (Copy-paste blok ini sampai 35x, ganti ID & data) -->
+                    <div class="carousel-item">
+                        <div class="neo-card p-6 text-center cursor-pointer h-full flex flex-col items-center"
+                            onclick="showMemberDetail(1)">
+                            <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Foto"
+                                class="w-28 h-28 rounded-full border-4 border-black object-cover mb-4">
+                            <h3 class="text-lg font-black uppercase mb-1 truncate w-full">No Name</h3>
+                            <p class="text-xs font-bold text-gray-600 mb-3">-</p>
+                            <button class="neo-btn w-full py-2 bg-neo-blue text-white uppercase text-xs mt-auto"
+                                data-translate="btn-profile">Lihat Profil</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="neo-card p-6 text-center cursor-pointer h-full flex flex-col items-center"
+                            onclick="showMemberDetail(2)">
+                            <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Foto"
+                                class="w-28 h-28 rounded-full border-4 border-black object-cover mb-4">
+                            <h3 class="text-lg font-black uppercase mb-1 truncate w-full">No Name</h3>
+                            <p class="text-xs font-bold text-gray-600 mb-3">-</p>
+                            <button class="neo-btn w-full py-2 bg-neo-purple text-white uppercase text-xs mt-auto"
+                                data-translate="btn-profile">Lihat Profil</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="neo-card p-6 text-center cursor-pointer h-full flex flex-col items-center"
+                            onclick="showMemberDetail(3)">
+                            <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Foto"
+                                class="w-28 h-28 rounded-full border-4 border-black object-cover mb-4">
+                            <h3 class="text-lg font-black uppercase mb-1 truncate w-full">No Name</h3>
+                            <p class="text-xs font-bold text-gray-600 mb-3">-</p>
+                            <button class="neo-btn w-full py-2 bg-neo-green text-white uppercase text-xs mt-auto"
+                                data-translate="btn-profile">Lihat Profil</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="neo-card p-6 text-center cursor-pointer h-full flex flex-col items-center"
+                            onclick="showMemberDetail(1)">
+                            <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Foto"
+                                class="w-28 h-28 rounded-full border-4 border-black object-cover mb-4">
+                            <h3 class="text-lg font-black uppercase mb-1 truncate w-full">No Name</h3>
+                            <p class="text-xs font-bold text-gray-600 mb-3">-</p>
+                            <button class="neo-btn w-full py-2 bg-neo-blue text-white uppercase text-xs mt-auto"
+                                data-translate="btn-profile">Lihat Profil</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="neo-card p-6 text-center cursor-pointer h-full flex flex-col items-center"
+                            onclick="showMemberDetail(2)">
+                            <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Foto"
+                                class="w-28 h-28 rounded-full border-4 border-black object-cover mb-4">
+                            <h3 class="text-lg font-black uppercase mb-1 truncate w-full">No Name</h3>
+                            <p class="text-xs font-bold text-gray-600 mb-3">-</p>
+                            <button class="neo-btn w-full py-2 bg-neo-purple text-white uppercase text-xs mt-auto"
+                                data-translate="btn-profile">Lihat Profil</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="neo-card p-6 text-center cursor-pointer h-full flex flex-col items-center"
+                            onclick="showMemberDetail(3)">
+                            <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Foto"
+                                class="w-28 h-28 rounded-full border-4 border-black object-cover mb-4">
+                            <h3 class="text-lg font-black uppercase mb-1 truncate w-full">No Name</h3>
+                            <p class="text-xs font-bold text-gray-600 mb-3">-</p>
+                            <button class="neo-btn w-full py-2 bg-neo-green text-white uppercase text-xs mt-auto"
+                                data-translate="btn-profile">Lihat Profil</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 🔁 LANJUTKAN COPY-PASTE SAMPAI ID 35 -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Profil Anggota -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content max-w-lg border-4 border-black shadow-neo-xl">
+            <div class="flex justify-between items-center mb-6 border-b-4 border-black pb-4">
+                <h3 class="text-2xl font-black text-black uppercase text-center sm:text-left w-full sm:w-auto"
+                    data-translate="member-modal-title">
+                    Profil Anggota
+                </h3>
+                <button onclick="closeMemberModal()" class="text-black hover:text-neo-pink text-2xl flex-shrink-0 ml-2">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="space-y-4">
+                <!-- 👇 Ubah: items-center + text-center untuk mobile -->
+                <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+
+                    <!-- Foto: mx-auto untuk tengah di mobile -->
+                    <img id="memberPhoto" src="" alt="Foto"
+                        class="w-32 h-32 rounded-full border-4 border-black object-cover flex-shrink-0 mx-auto sm:mx-0">
+
+                    <!-- Teks: text-center untuk mobile -->
+                    <div class="text-center sm:text-left">
+                        <h4 id="memberName" class="text-2xl font-black text-black mb-1 uppercase"></h4>
+                        <p id="memberRole"
+                            class="text-neo-blue font-bold text-sm mb-3 bg-neo-blue/10 inline-block px-2 border-2 border-black">
+                        </p>
+                        <p id="memberBio" class="text-black font-medium text-sm leading-relaxed mb-4"></p>
+
+                        <!-- Tombol kontak: justify-center untuk mobile -->
+                        <div id="memberContact" class="flex gap-3 mt-2 justify-center sm:justify-start"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-20 sm:py-32 bg-neo-lavender">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2
+                class="text-3xl sm:text-4xl md:text-6xl font-black mb-8 text-center uppercase tracking-tighter reveal reveal-up">
+                <span
+                    class="bg-neo-blue text-white px-8 py-3 border-4 border-black shadow-neo-lg inline-block transform -rotate-1 hover:rotate-1 transition-transform duration-300 cursor-default"
+                    data-translate="activities-title">Galeri Kegiatan</span>
+            </h2>
+
+            <!-- Tombol Navigasi Carousel -->
+            <div class="flex justify-center md:justify-end gap-4 mb-6">
+                <button class="carousel-button-static prev" onclick="moveActivityCarousel(-1)" aria-label="Prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button-static next" onclick="moveActivityCarousel(1)" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Carousel Container -->
+            <div class="carousel-container relative reveal reveal-scale delay-200">
+                <div class="carousel-inner" id="activityCarousel">
+
+                    <!-- 👉 KARTU KEGIATAN 1 -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full" onclick="showActivityDetail(1)">
+                            <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Study Tour"
+                                class="w-full h-48 object-cover border-b-4 border-black">
+                            <div class="p-4">
+                                <h3 class="text-lg font-black uppercase mb-1 truncate">Study Tour Bandung</h3>
+                                <p class="text-xs font-bold text-gray-600">12 Oktober 2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 👉 KARTU KEGIATAN 2 -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full" onclick="showActivityDetail(2)">
+                            <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Lomba Web"
+                                class="w-full h-48 object-cover border-b-4 border-black">
+                            <div class="p-4">
+                                <h3 class="text-lg font-black uppercase mb-1 truncate">Lomba Web Design</h3>
+                                <p class="text-xs font-bold text-gray-600">5 November 2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 👉 KARTU KEGIATAN 3 -->
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full" onclick="showActivityDetail(3)">
+                            <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Kelas Industri"
+                                class="w-full h-48 object-cover border-b-4 border-black">
+                            <div class="p-4">
+                                <h3 class="text-lg font-black uppercase mb-1 truncate">Kelas Industri</h3>
+                                <p class="text-xs font-bold text-gray-600">20 Desember 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="neo-card overflow-hidden cursor-pointer h-full" onclick="showActivityDetail(4)">
+                            <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Workshop AI"
+                                class="w-full h-48 object-cover border-b-4 border-black">
+                            <div class="p-4">
+                                <h3 class="text-lg font-black uppercase mb-1 truncate">Workshop AI</h3>
+                                <p class="text-xs font-bold text-gray-600">15 Januari 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 🔁 COPY-PASTE KARTU BERIKUTNYA SESUAI KEBUTUHAN -->
+                    <!-- Contoh untuk kegiatan ke-4, ke-5, dst -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Detail Kegiatan -->
+    <div id="activityModal" class="modal">
+        <div class="modal-content max-w-2xl border-4 border-black shadow-neo-xl">
+            <div class="flex justify-between items-center mb-4 border-b-4 border-black pb-4">
+                <h3 class="text-2xl font-black text-black uppercase" data-translate="activity-modal-title">Detail
+                    Kegiatan</h3>
+                <button onclick="closeActivityModal()" class="text-black hover:text-neo-pink text-2xl"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <img id="activityImage" src="" alt="" class="w-full h-56 sm:h-64 object-cover border-4 border-black mb-4">
+            <h4 id="activityTitle" class="text-xl font-black text-black mb-2 uppercase"></h4>
+            <p id="activityDate"
+                class="text-sm font-bold text-neo-blue mb-3 bg-neo-blue/10 inline-block px-2 border-2 border-black"></p>
+            <p id="activityDesc" class="text-black font-medium text-sm leading-relaxed"></p>
+            <button onclick="closeActivityModal()" class="neo-btn w-full py-3 bg-neo-pink text-white uppercase mt-6"
+                data-translate="activity-modal-close">Tutup</button>
+        </div>
+    </div>
+
+    <!-- TIMELINE PERJALANAN KELAS -->
+    <section id="timeline" class="py-20 sm:py-32 bg-neo-teal border-y-4 border-black overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2
+                class="text-3xl sm:text-4xl md:text-6xl font-black mb-16 text-center uppercase tracking-tighter reveal reveal-up">
+                <span
+                    class="bg-white text-black px-8 py-3 border-4 border-black shadow-neo-lg inline-block transform -rotate-1 hover:rotate-1 transition-transform duration-300 cursor-default"
+                    data-translate="timeline-title">
+                    Perjalanan Kelas
+                </span>
+            </h2>
+
+            <div class="relative max-w-6xl mx-auto">
+
+                <!-- Garis Timeline: Hanya muncul di desktop (md:) -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-black -translate-x-1/2 z-0"></div>
+
+                <div class="space-y-8 sm:space-y-12 z-10">
+
+                    <!-- EVENT 1 -->
+                    <div class="flex flex-col md:flex-row md:odd:justify-start md:even:justify-end items-center">
+                        <div class="neo-card w-full md:w-[45%] overflow-hidden reveal reveal-up">
+                            <div class="relative aspect-video bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Hari Pertama"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-5 bg-white">
+                                <span
+                                    class="inline-block px-3 py-1 bg-neo-yellow border-2 border-black text-xs font-black uppercase mb-3">Juli
+                                    2023</span>
+                                <h3 class="text-lg sm:text-xl font-black mb-2 uppercase"
+                                    data-translate="timeline-1-title">Hari Pertama Masuk</h3>
+                                <p class="text-sm font-medium text-justify leading-relaxed"
+                                    data-translate="timeline-1-desc">Awal mula kami bertemu. Masih malu-malu, belum tahu
+                                    siapa yang bakal jadi teman coding bareng sampai wisuda nanti.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EVENT 2 -->
+                    <div class="flex flex-col md:flex-row md:odd:justify-start md:even:justify-end items-center">
+                        <div class="neo-card w-full md:w-[45%] overflow-hidden reveal reveal-up">
+                            <div class="relative aspect-video bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Study Tour"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-5 bg-white">
+                                <span
+                                    class="inline-block px-3 py-1 bg-neo-pink text-white border-2 border-black text-xs font-black uppercase mb-3">Oktober
+                                    2023</span>
+                                <h3 class="text-lg sm:text-xl font-black mb-2 uppercase"
+                                    data-translate="timeline-2-title">Study Tour ke ITB</h3>
+                                <p class="text-sm font-medium text-justify leading-relaxed"
+                                    data-translate="timeline-2-desc">Kunjungan edukasi pertama. Belajar langsung dari
+                                    laboratorium dan dosen Teknik Informatika, membuka wawasan tentang dunia kampus.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EVENT 3 -->
+                    <div class="flex flex-col md:flex-row md:odd:justify-start md:even:justify-end items-center">
+                        <div class="neo-card w-full md:w-[45%] overflow-hidden reveal reveal-up">
+                            <div class="relative aspect-video bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Lomba Web"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-5 bg-white">
+                                <span
+                                    class="inline-block px-3 py-1 bg-neo-blue text-white border-2 border-black text-xs font-black uppercase mb-3">Maret
+                                    2024</span>
+                                <h3 class="text-lg sm:text-xl font-black mb-2 uppercase"
+                                    data-translate="timeline-3-title">Juara Lomba Web Nasional</h3>
+                                <p class="text-sm font-medium text-justify leading-relaxed"
+                                    data-translate="timeline-3-desc">Tim kami berhasil masuk 3 besar! Proyek bertema
+                                    Smart School dengan React & Supabase. Membuktikan kerja keras tim berbuah manis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EVENT 4 -->
+                    <div class="flex flex-col md:flex-row md:odd:justify-start md:even:justify-end items-center">
+                        <div class="neo-card w-full md:w-[45%] overflow-hidden reveal reveal-up">
+                            <div class="relative aspect-video bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="PKL Industri"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-5 bg-white">
+                                <span
+                                    class="inline-block px-3 py-1 bg-neo-green text-black border-2 border-black text-xs font-black uppercase mb-3">Januari
+                                    2025</span>
+                                <h3 class="text-lg sm:text-xl font-black mb-2 uppercase"
+                                    data-translate="timeline-4-title">Prakerin / PKL Industri</h3>
+                                <p class="text-sm font-medium text-justify leading-relaxed"
+                                    data-translate="timeline-4-desc">Terjun langsung ke dunia kerja. Belajar budaya
+                                    industri, manajemen proyek, dan mengasah skill di perusahaan teknologi ternama.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EVENT 5 -->
+                    <div class="flex flex-col md:flex-row md:odd:justify-start md:even:justify-end items-center">
+                        <div class="neo-card w-full md:w-[45%] overflow-hidden reveal reveal-up">
+                            <div class="relative aspect-video bg-black border-b-4 border-black">
+                                <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="Wisuda"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-5 bg-white">
+                                <span
+                                    class="inline-block px-3 py-1 bg-neo-purple text-white border-2 border-black text-xs font-black uppercase mb-3">Mei
+                                    2025</span>
+                                <h3 class="text-lg sm:text-xl font-black mb-2 uppercase"
+                                    data-translate="timeline-5-title">Ujian Akhir & Wisuda</h3>
+                                <p class="text-sm font-medium text-justify leading-relaxed"
+                                    data-translate="timeline-5-desc">Momen paling ditunggu. Menyelesaikan seluruh
+                                    kewajiban akademik dan resmi menyandang gelar lulusan. Sampai jumpa di puncak
+                                    berikutnya!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Testimonials Section -->
+    <section id="testimonial" class="py-20 sm:py-32 bg-neo-pink border-b-4 border-black overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2
+                class="text-3xl sm:text-4xl md:text-6xl font-black mb-16 text-center uppercase tracking-tighter reveal reveal-up">
+                <span
+                    class="bg-white text-black px-8 py-3 border-4 border-black shadow-neo-lg inline-block transform rotate-1 hover:-rotate-1 transition-transform duration-300 cursor-default"
+                    data-translate="testimonial-title">What They Said</span>
+            </h2>
+
+            <!-- Testimonial Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+
+                <!-- Testimonial 1: Risfalidah - Guru Matematika -->
+                <div class="testimonial-card p-6 sm:p-8 flex flex-col h-full bg-white reveal reveal-up delay-100">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="flex text-black">
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                        </div>
+                        <span class="ml-2 text-sm font-black">5.0</span>
+                    </div>
+
+                    <p class="text-black mb-8 italic font-bold leading-relaxed text-sm sm:text-base flex-grow text-justify border-l-4 border-neo-yellow pl-4"
+                        data-translate="testi-risfalidah">
+                        "Anak-anak XII PPLG 1 memiliki pola pikir analitis yang sangat baik. Mereka mampu memecahkan
+                        masalah kompleks dengan logika yang terstruktur — bekal penting dalam pemrograman dan
+                        pengembangan sistem. Bangga melihat progres mereka dari konsep matematika hingga implementasi
+                        kode yang solid."
+                    </p>
+
+                    <div class="flex items-center pt-4 border-t-2 border-black">
+                        <img src="https://cdn-icons-png.flaticon.com/128/15678/15678795.png" alt="Risfalidah"
+                            class="w-12 h-12 border-2 border-black object-cover mr-3">
+                        <div>
+                            <h4 class="font-black text-black text-sm sm:text-base">Risfalidah</h4>
+                            <p class="text-xs sm:text-sm font-bold text-gray-600">Guru Matematika</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2: Eko Saputra - Guru Jurusan PPLG -->
+                <div class="testimonial-card p-6 sm:p-8 flex flex-col h-full bg-white reveal reveal-up delay-200">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="flex text-black">
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                        </div>
+                        <span class="ml-2 text-sm font-black">5.0</span>
+                    </div>
+
+                    <p class="text-black mb-8 italic font-bold leading-relaxed text-sm sm:text-base flex-grow text-justify border-l-4 border-neo-blue pl-4"
+                        data-translate="testi-eko">
+                        "Sebagai guru produktif, saya melihat XII PPLG 1 tidak hanya mahir coding, tapi juga mampu
+                        berkolaborasi dalam tim, mengelola proyek dari awal hingga deploy, dan beradaptasi dengan
+                        teknologi baru. Mereka siap menghadapi tantangan industri digital."
+                    </p>
+
+                    <div class="flex items-center pt-4 border-t-2 border-black">
+                        <img src="https://cdn-icons-png.flaticon.com/128/15678/15678795.png" alt="Eko Saputra"
+                            class="w-12 h-12 border-2 border-black object-cover mr-3">
+                        <div>
+                            <h4 class="font-black text-black text-sm sm:text-base">Eko Saputra</h4>
+                            <p class="text-xs sm:text-sm font-bold text-gray-600">Guru Jurusan PPLG</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3: Rohaniya - Guru PKWU -->
+                <div class="testimonial-card p-6 sm:p-8 flex flex-col h-full bg-white reveal reveal-up delay-300">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="flex text-black">
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                            <i class="fas fa-star text-lg"></i>
+                        </div>
+                        <span class="ml-2 text-sm font-black">5.0</span>
+                    </div>
+
+                    <p class="text-black mb-8 italic font-bold leading-relaxed text-sm sm:text-base flex-grow text-justify border-l-4 border-neo-green pl-4"
+                        data-translate="testi-rohaniya">
+                        "Kreativitas dan jiwa wirausaha XII PPLG 1 sangat menonjol. Mereka tidak hanya membuat aplikasi,
+                        tapi juga memikirkan nilai guna, target pengguna, dan cara mempresentasikan karya dengan
+                        meyakinkan. Kombinasi teknis + bisnis yang langka dan berharga."
+                    </p>
+
+                    <div class="flex items-center pt-4 border-t-2 border-black">
+                        <img src="https://cdn-icons-png.flaticon.com/128/15678/15678795.png" alt="Rohaniya"
+                            class="w-12 h-12 border-2 border-black object-cover mr-3">
+                        <div>
+                            <h4 class="font-black text-black text-sm sm:text-base">Rohaniya</h4>
+                            <p class="text-xs sm:text-sm font-bold text-gray-600">Guru PKWU</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Testimonial Stats -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 reveal reveal-up delay-400">
+                <div class="neo-card text-center p-6 bg-neo-yellow">
+                    <div class="text-3xl sm:text-4xl font-black text-black mb-2 tracking-tighter">3</div>
+                    <div class="text-xs sm:text-sm font-bold uppercase text-black" data-translate="stat-happy-clients">
+                        Happy
+                        Clients</div>
+                </div>
+
+                <div class="neo-card text-center p-6 bg-neo-green">
+                    <div class="text-3xl sm:text-4xl font-black text-black mb-2 tracking-tighter">100</div>
+                    <div class="text-xs sm:text-sm font-bold uppercase text-black" data-translate="stat-success-rate">
+                        Success Rate
+                        %</div>
+                </div>
+
+                <div class="neo-card text-center p-6 bg-neo-blue text-white">
+                    <div class="text-3xl sm:text-4xl font-black mb-2 tracking-tighter">5</div>
+                    <div class="text-xs sm:text-sm font-bold uppercase" data-translate="stat-projects">Projects
+                        Completed</div>
+                </div>
+
+                <div class="neo-card text-center p-6 bg-white">
+                    <div class="text-3xl sm:text-4xl font-black text-black mb-2 tracking-tighter">5.0</div>
+                    <div class="text-xs sm:text-sm font-bold uppercase text-black" data-translate="stat-rating">Average
+                        Rating
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Contact Section -->
+    <section id="contact" class="py-20 sm:py-32 bg-neo-yellow border-y-4 border-black overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2
+                class="text-3xl sm:text-4xl md:text-6xl font-black mb-16 text-center uppercase tracking-tighter reveal reveal-up">
+                <span
+                    class="bg-white text-black px-8 py-3 border-4 border-black shadow-neo-lg inline-block transform -rotate-1 hover:rotate-1 transition-transform duration-300 cursor-default"
+                    data-translate="nav-contact">Get In Touch</span>
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                <div class="reveal reveal-left">
+                    <h3 class="text-2xl sm:text-3xl font-black mb-8 uppercase tracking-tight"
+                        data-translate="contact-info-title">
+                        Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start p-6 bg-white border-4 border-black shadow-neo">
+                            <div
+                                class="w-12 h-12 border-2 border-black bg-neo-pink flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-black mb-1 uppercase" data-translate="contact-location-title">
+                                    Location</h4>
+                                <p class="text-black font-bold">Bandar Lampung, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start p-6 bg-white border-4 border-black shadow-neo">
+                            <div
+                                class="w-12 h-12 border-2 border-black bg-neo-blue flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-black mb-1 uppercase" data-translate="contact-email-title">Email
+                                </h4>
+                                <p class="text-black font-bold break-all">xiipplg1@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start p-6 bg-white border-4 border-black shadow-neo">
+                            <div
+                                class="w-12 h-12 border-2 border-black bg-neo-yellow flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-phone text-black"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-black mb-1 uppercase" data-translate="contact-phone-title">Phone
+                                </h4>
+                                <p class="text-black font-bold">-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal reveal-right delay-200">
+                    <h3 class="text-2xl sm:text-3xl font-black mb-8 uppercase tracking-tight"
+                        data-translate="contact-message-title">Send Me a Message</h3>
+                    <form id="emailForm" class="space-y-6">
+                        <div class="relative">
+                            <input type="text" id="name" name="name"
+                                class="form-input w-full px-4 py-4 bg-white border-4 border-black font-bold focus:outline-none shadow-neo transition-all duration-200 text-black"
+                                placeholder=" " required="">
+                            <label for="name"
+                                class="floating-label absolute left-3 top-2 text-gray-500 font-bold uppercase text-xs"
+                                data-translate="form-name">Your Name</label>
+                        </div>
+                        <div class="relative">
+                            <input type="email" id="email" name="email"
+                                class="form-input w-full px-4 py-4 bg-white border-4 border-black font-bold focus:outline-none shadow-neo transition-all duration-200 text-black"
+                                placeholder=" " required="">
+                            <label for="email"
+                                class="floating-label absolute left-3 top-2 text-gray-500 font-bold uppercase text-xs"
+                                data-translate="form-email">Your Email</label>
+                        </div>
+                        <div class="relative">
+                            <input type="text" id="subject" name="subject"
+                                class="form-input w-full px-4 py-4 bg-white border-4 border-black font-bold focus:outline-none shadow-neo transition-all duration-200 text-black"
+                                placeholder=" " required="">
+                            <label for="subject"
+                                class="floating-label absolute left-3 top-2 text-gray-500 font-bold uppercase text-xs"
+                                data-translate="form-subject">Subject</label>
+                        </div>
+                        <div class="relative">
+                            <textarea id="message" name="message" rows="5"
+                                class="form-input w-full px-4 py-4 bg-white border-4 border-black font-bold focus:outline-none shadow-neo transition-all duration-200 text-black"
+                                placeholder=" " required=""></textarea>
+                            <label for="message"
+                                class="floating-label absolute left-3 top-2 text-gray-500 font-bold uppercase text-xs"
+                                data-translate="form-message">Your Message</label>
+                        </div>
+                        <button type="submit"
+                            class="neo-btn w-full py-4 bg-black text-white text-xl uppercase tracking-widest border-2 border-white">
+                            <i class="fas fa-paper-plane mr-2"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="py-12 bg-neo-slate text-white border-t-4 border-black">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <a href="#" class="text-2xl sm:text-3xl font-black uppercase tracking-tighter">
+                        XII <span class="bg-neo-yellow text-black px-2 border-2 border-white">PPLG 1</span>
+                    </a>
+                </div>
+                <div class="flex space-x-6 mb-8 md:mb-0">
+                    <a href="#" target="_blank"
+                        class="neo-btn w-12 h-12 bg-neo-purple flex items-center justify-center text-white border-white">
+                        <i class="fab fa-tiktok text-xl"></i>
+                    </a>
+                    <a href="#" target="_blank"
+                        class="neo-btn w-12 h-12 bg-neo-black flex items-center justify-center text-white border-white">
+                        <i class="fab fa-x text-xl"></i>
+                    </a>
+                    <a href="#" target="_blank"
+                        class="neo-btn w-12 h-12 bg-neo-pink flex items-center justify-center text-white border-white">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+                <div class="text-white font-bold uppercase text-xs">
+                    © <span id="current-year">2025</span> XII PPLG 1.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
